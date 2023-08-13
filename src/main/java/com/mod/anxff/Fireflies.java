@@ -25,6 +25,7 @@ public class Fireflies implements ModInitializer {
         LOGGER.info("Fireflies entities registered");
 
         ItemRegister.registerItems();
+        ItemRegister.registerItemGroups();
         LOGGER.info("Fireflies items registered");
 
         SoundRegister.registerSounds();

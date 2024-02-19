@@ -3,16 +3,18 @@
 	"id": "anxff",
 	"version": "${version}",
 	"name": "AmbientFireflies",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds fireflies to the game",
 	"authors": [
-		"Me!"
+		"Anxietie"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/ambient-fireflies",
+		"sources": "https://github.com/Anxietie/Ambient-Fireflies.git",
+		"issues": "https://github.com/Anxietie/Ambient-Fireflies/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "GPLv3",
 	"icon": "assets/anxff/icon.png",
+	"accessWidener": "anxff.accesswidener",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -20,6 +22,9 @@
 		],
 		"client": [
 			"com.mod.AmbientFirefliesClient"
+		],
+		"dynamiclights": [
+			"com.mod.compat.dynamiclights.DynamicLights"
 		]
 	},
 	"mixins": [
@@ -30,12 +35,12 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.15.7",
-		"minecraft": "~1.19.4",
+		"fabricloader": ">=${loader_version}",
+		"minecraft": "~${minecraft_version}",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": ">=0.85.0+1.19.4"
 	},
-	"suggests": {
-		"another-mod": "*"
+	"recommends": {
+		"lambdynamiclights": "2.3.1+1.19.4"
 	}
 }

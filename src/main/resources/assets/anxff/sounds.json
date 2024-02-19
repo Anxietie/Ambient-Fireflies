@@ -1,0 +1,44 @@
+{
+	"firefly_catch": {
+		"subtitle": "subtitle.anxff.firefly_catch",
+		"sounds": [
+			"anxff:firefly_catch"
+		]
+	},
+	"firefly_release": {
+		"subtitle": "subtitle.anxff.firefly_release",
+		"sounds": [
+			"anxff:firefly_release"
+		]
+	},
+	"firefly_death": {
+		"subtitle": "subtitle.anxff.firefly_death",
+		"sounds": [
+			{
+				"name": "anxff:firefly_death",
+				"volume": 0.5
+			}
+		]
+	},
+	"firefly_ambient": {
+		"subtitle": "subtitle.anxff.firefly_ambient",
+		"sounds": [
+			{
+				"name": "anxff:firefly_fly1",
+				"volume": 0.2
+			},
+			{
+				"name": "anxff:firefly_fly2",
+				"volume": 0.2
+			},
+			{
+				"name": "anxff:firefly_fly3",
+				"volume": 0.2
+			},
+			{
+				"name": "anxff:firefly_fly4",
+				"volume": 0.2
+			}
+		]
+	}
+}

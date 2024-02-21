@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "anxff:photocyte"
+		},
+		{
+			"item": "minecraft:glow_ink_sac"
+		}
+	],
+	"result": {
+		"item": "anxff:glow_powder"
+	}
+}

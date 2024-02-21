@@ -18,7 +18,9 @@ public class ModEntityGeneration {
 				BiomeKeys.BIRCH_FOREST,
 				BiomeKeys.DARK_FOREST,
 				BiomeKeys.CHERRY_GROVE,
-				BiomeKeys.TAIGA
+				BiomeKeys.TAIGA,
+				BiomeKeys.SWAMP,
+				BiomeKeys.MANGROVE_SWAMP
 		), SpawnGroup.CREATURE, EntityRegister.FIREFLY, 8, 2, 5);
 		SpawnRestriction.register(EntityRegister.FIREFLY, SpawnRestriction.Location.NO_RESTRICTIONS, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FireflyEntity::canSpawn);
 	}

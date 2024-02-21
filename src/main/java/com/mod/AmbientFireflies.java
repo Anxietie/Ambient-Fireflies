@@ -1,9 +1,6 @@
 package com.mod;
 
-import com.mod.registry.EntityRegister;
-import com.mod.registry.ItemRegister;
-import com.mod.registry.ParticleRegister;
-import com.mod.registry.SoundRegister;
+import com.mod.registry.*;
 import com.mod.world.gen.ModEntityGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -38,5 +35,8 @@ public class AmbientFireflies implements ModInitializer {
 
 		ParticleRegister.registerParticles();
 		LOGGER.info("Fireflies particles registered");
+
+		PotionRegister.registerPotions();
+		LOGGER.info("Fireflies potions registered");
 	}
 }

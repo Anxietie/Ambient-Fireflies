@@ -142,7 +142,7 @@ public class FireflyEntity extends PathAwareEntity implements Flutterer, Bottlea
 
 	public static boolean canSpawn(EntityType<FireflyEntity> entityType, WorldAccess world, SpawnReason spawnReason, BlockPos pos, Random random) {
 		if (pos.getY() < world.getSeaLevel()) return false;
-		if (world.getLightLevel(LightType.BLOCK, pos) > 9 || !isNightTime(world)) return false;
+		if (world.getLightLevel(LightType.BLOCK, pos) > 9 || isNightTime(world)) return false;
 		return FireflyEntity.canMobSpawn(entityType, world, spawnReason, pos, random);
 	}
 

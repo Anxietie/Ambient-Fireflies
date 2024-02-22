@@ -17,11 +17,16 @@ public class ModEntityGeneration {
 				BiomeKeys.BEACH,
 				BiomeKeys.BIRCH_FOREST,
 				BiomeKeys.DARK_FOREST,
+				BiomeKeys.FLOWER_FOREST,
+				BiomeKeys.SAVANNA,
+				BiomeKeys.JUNGLE,
+				BiomeKeys.BAMBOO_JUNGLE,
+				BiomeKeys.SPARSE_JUNGLE,
 				BiomeKeys.CHERRY_GROVE,
 				BiomeKeys.TAIGA,
 				BiomeKeys.SWAMP,
 				BiomeKeys.MANGROVE_SWAMP
-		), SpawnGroup.CREATURE, EntityRegister.FIREFLY, 8, 2, 5);
+		), SpawnGroup.CREATURE, EntityRegister.FIREFLY, 10, 2, 5);
 		SpawnRestriction.register(EntityRegister.FIREFLY, SpawnRestriction.Location.NO_RESTRICTIONS, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FireflyEntity::canSpawn);
 	}
 }
